@@ -1,9 +1,23 @@
+make all: build run clean
+
 # TARGETS
-build: my_lib.o
-	g++ main.cpp my_lib.o -o main
+build: ex1_pointers.o ex2_string.o ex3_streams.o ex4_container.o
+	g++ main.cpp ex1_pointers.o ex2_string.o ex3_streams.o ex4_container.o -o main
 
-my_lib.o:
-	g++ my_lib.cpp -c
+ex1_pointers.o:
+	g++ ex1_pointers.cpp -c
 
-execute:
+ex2_string.o:
+	g++ ex2_string.cpp -c
+
+ex3_streams.o:
+	g++ ex3_streams.cpp -c
+
+ex4_container.o:
+	g++ ex4_container.cpp -c
+
+run:
 	./main
+
+clean:
+	rm -f *.o main

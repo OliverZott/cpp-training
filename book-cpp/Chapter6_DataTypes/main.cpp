@@ -24,33 +24,29 @@ int main()
 {
 
     // pointer example (ex1_pointers)
-    /*
+    std::cout << " ---------------------------------- Example 1 ---------------------------------- " << std::endl;
     ptr_ex();
-    //*/
 
     // String example (ex2_string)
-    /*
-    std::string name;           // standard constructor: ( std::string name{} )
+    std::cout << " ---------------------------------- Example 2 ---------------------------------- " << std::endl;
+    std::string name; // standard constructor: ( std::string name{} )
     unsigned gebJahr = 0;
     eingabe(name, gebJahr);
-    //*/
 
     // String example (ex3_streams)
-    /*
+    std::cout << " ---------------------------------- Example 3 ---------------------------------- " << std::endl;
     std::string name2;
     std::array<int, 4> monthlyIncome;
     eingabe2(name2, monthlyIncome);
-    //*/
 
     // Container example (ex4_container)
-    //*
+    std::cout << " ---------------------------------- Example 4 ---------------------------------- " << std::endl;
     array_ex4();
     Januar jan;
     initJanuar(jan);
     int sum = sumJanuar(jan);
     std::cout << "sumJanuary: " << sum << std::endl;
     printJanuar2(jan);
-    //*/
 
     std::vector<int> squares; // define and initiate vector
     vector_ex1(squares);
