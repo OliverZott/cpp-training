@@ -118,5 +118,5 @@ make execute COMPILATION_MODE=Release # Build type is release
 ### Important Shortcuts of the Makefile Template
 
 - ```$@```: the file name of the target
-- ```$<```: the name of the first ependency
+- ```$<```: the name of the first dependency
 - ```$^```: the names of all dependencies

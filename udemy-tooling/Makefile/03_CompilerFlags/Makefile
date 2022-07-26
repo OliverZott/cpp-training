@@ -1,9 +1,27 @@
+# Variables
+
+DEBUG ?= 1  # default value for variable
+ifeq ($(DEBUG), 1) 
+CPP_COMPILER_FLAGS = -g -O0 -Wall -Wextra -Wpedantic -Wconversion -std=c++17
+EXECUTABLE_NAME = mainDebug
+else
+CPP_COMPILER_FLAGS = -O3 -Wall -Wextra -Wpedantic -std=c++17
+EXECUTABLE_NAME = mainRelease
+endif
+
+CPP_COMPILER = g++
+CPP_COMPILER_CALL = $(CPP_COMPILER) $(CPP_COMPILER_FLAGS)
+
 # TARGETS
+
 build: my_lib.o
-	g++ main.cpp my_lib.o -o main
+	$(CPP_COMPILER_CALL) main.cpp my_lib.o -o $(EXECUTABLE_NAME)
 
 my_lib.o:
-	g++ my_lib.cpp -c
+	$(CPP_COMPILER_CALL) my_lib.cpp -c
 
-execute:
-	./main
+run:
+	./$(EXECUTABLE_NAME)
+
+clean:
+	rm -f *.o mainRelease mainDebug
