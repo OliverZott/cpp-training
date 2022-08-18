@@ -1,3 +1,13 @@
+/*
+
+&: memory Address
+*: Value of memory addres / pointer declaration?
+
+& = Reference
+* = Dereference
+
+*/
+
 #include <iostream>
 
 int main()
@@ -11,7 +21,8 @@ int main()
     std::cout << "Value: 'number': " << number << std::endl;
     std::cout << "Address: '&number': " << &number << std::endl;
     std::cout << "Value: 'p': " << p << std::endl;
-    std::cout << "Value of memory address 'p' points to: '*p'" << *p << std::endl;
+    std::cout << "Address '&p': " << &p << std::endl;
+    std::cout << "Value of memory address 'p' points to: '*p': " << *p << std::endl;
 
     return 0;
 }
