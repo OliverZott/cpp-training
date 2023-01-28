@@ -1,12 +1,13 @@
 #include <iostream>
 
+#include "Game.hpp"
+
 constexpr unsigned int LEN_X = 10;
 constexpr unsigned int START = 0;
 constexpr unsigned int GOAL = LEN_X - 1;
 
 constexpr char LEFT = 'a';
 constexpr char RIGHT = 'd';
-
 
 void print_game_state(unsigned int player)
 {
@@ -25,7 +26,6 @@ void print_game_state(unsigned int player)
         std::cout << game_state[i];
     }
 }
-
 
 unsigned int execute_move(unsigned int player, char move)
 {
@@ -50,7 +50,6 @@ unsigned int execute_move(unsigned int player, char move)
     return player;
 }
 
-
 bool is_finished(unsigned int player)
 {
     if (player == GOAL)
@@ -60,7 +59,6 @@ bool is_finished(unsigned int player)
     }
     return false;
 }
-
 
 void game()
 {

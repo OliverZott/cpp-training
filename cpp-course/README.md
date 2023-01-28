@@ -1,4 +1,9 @@
-# Build & Run (VS Code)
+# C++ Course
+
+<https://www.udemy.com/course/der-komplettkurs-zur-modernen-c-programmierung/learn/lecture/11702546#questions/18657802>
+<https://github.com/franneck94/UdemyCpp>
+
+## Prerequisites
 
 - Install C++ Compiler
   - gcc g++
@@ -12,8 +17,9 @@
 ## Run and Debug
 
 - use CLI
-  - `g++ TernaryOperator.cc -o main`
+  - `g++ TernaryOperator.cc -g -o main` ... -g for debugging
   - `./main`
+  - `g++ Game.cc  Main.cc -g -o main` ...if various cpp files (ignore headers)
 - Use makefile:
   - `make build` and `make run`, afterwards `make clean`
 - For debugging
@@ -30,7 +36,7 @@
   - C:\Users\HAL9000\source\repos\udemy_vscode>cd 1_Intro
   - C:\Users\HAL9000\source\repos\udemy_vscode\1_Intro>mainDebug.exe
 
-# Cleanup
+## Cleanup
 
 user scripts:
 
@@ -46,6 +52,15 @@ user scripts:
 - Translation Unit
 - Include Guard
   - `#pragma once`
+
+## Loops
+
+- continue vs break
+  - continue ...starts next loop
+  - break ...end loop completely
+- for vs whike
+  - for ...we "know" how often loop will run (x-times)
+  - while ...for more complex break-conditions (loop can run 1 or 9999 times)
 
 ## Stack vs Heap
 
