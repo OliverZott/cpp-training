@@ -1,5 +1,7 @@
 #include <iostream>
 
+// https://www.udemy.com/course/der-komplettkurs-zur-modernen-c-programmierung/learn/lecture/34107446#overview
+
 int main()
 {
     int number;
@@ -19,14 +21,13 @@ int main()
         }
         else
         {
-            std::cout << "You lost";
+            std::cout << "You lost \n";
         }
     }
     else
     {
         std::cout << "You must enter number between 0 and 9." << std::endl;
     }
-
 
     return 0;
 }

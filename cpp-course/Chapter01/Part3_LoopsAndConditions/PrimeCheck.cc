@@ -1,5 +1,9 @@
 #include <iostream>
 
+/*
+Modulo
+*/
+
 static bool IsPrime(int number)
 {
     for (int i = 2; i < number / 2; i++)
@@ -11,7 +15,6 @@ static bool IsPrime(int number)
     }
     return true;
 }
-
 
 int main()
 {

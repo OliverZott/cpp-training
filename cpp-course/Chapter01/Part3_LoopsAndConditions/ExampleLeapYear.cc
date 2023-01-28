@@ -11,12 +11,12 @@ int main()
     bool divisibleByHundret = year % 100 == 0 ? true : false;
     bool divisibleByFourhundret = year % 400 == 0 ? true : false;
 
-
     if (divisibleByHundret)
     {
         if (divisibleByFourhundret)
         {
-            std::cout << year << "is a leap year." << std::endl;
+            // eg 2024
+            std::cout << year << " is a leap year." << std::endl;
         }
         else
         {
@@ -25,10 +25,11 @@ int main()
     }
     else if (divisibleByFour)
     {
-        std::cout << year << "is a leap year." << std::endl;
+        std::cout << year << " is a leap year." << std::endl;
     }
     else
     {
-        std::cout << year << "is NOT a leap year." << std::endl;
+        std::cout << year << " is NOT a leap year." << std::endl;
+        std::cout << year << " is it a leap year?? (boolalpha version): " << std::boolalpha << divisibleByFourhundret << std::endl;
     }
 }
