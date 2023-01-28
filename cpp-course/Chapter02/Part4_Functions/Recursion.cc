@@ -6,9 +6,13 @@ int faculty(int i)
     {
         return i * faculty(i - 1);
     }
-    else
+    else if (i == 1)
     {
         return 1;
+    }
+    else
+    {
+        return 0;
     }
 }
 

@@ -13,6 +13,10 @@
   - Install C / C++ package (MS)
   - Install C++ config package
   - ctrl + shift + P --> C/C++ Config: Generate C++ Config FIles
+- Formatter: Clang-Format [doc](https://clang.llvm.org/docs/ClangFormat.html)
+- Linter: Clang-Tidy
+  - [doc](https://clang.llvm.org/extra/clang-tidy/)
+  - [video](https://www.udemy.com/course/der-komplettkurs-zur-modernen-c-programmierung/learn/lecture/29779776#questions/18657802)
 
 ## Run and Debug
 
@@ -43,14 +47,16 @@ user scripts:
 - `.\cleanup.ps1`
 - `.\cleanup.sh`
 
-# Conventions
-
-- <https://google.github.io/styleguide/cppguide.html#Variable_Names>
-
 # Remarks
 
-- Translation Unit
-- Include Guard
+## Compiler / Assembler
+
+[Debug vs Release Mode](https://www.udemy.com/course/der-komplettkurs-zur-modernen-c-programmierung/learn/lecture/21945536#questions/18657802)  
+[Assembler explorer](https://godbolt.org/)  
+[How the compiler works](https://www.toptal.com/c-plus-plus/c-plus-plus-understanding-compilation)  
+
+- Translation Unit == .cpp + .hpp file
+- Include Guard ...to only include functions once
   - `#pragma once`
 
 ## Loops
@@ -73,6 +79,10 @@ user scripts:
 - Heap
   - big
   - manuall (de)allocation
+
+## Conventions
+
+- <https://google.github.io/styleguide/cppguide.html#Variable_Names>
 
 # Todo
 
