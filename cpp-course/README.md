@@ -59,24 +59,28 @@ user scripts:
 - Include Guard ...to only include functions once
   - `#pragma once`
 
+## Basics
+
+- `#define` vs `const` [link](https://www.geeksforgeeks.org/diffference-define-const-c/)
+
 ## Loops
 
-- continue vs break
+- `continue` vs `break`
   - continue ...starts next loop
   - break ...end loop completely
-- for vs whike
+- `for` vs `while`
   - for ...we "know" how often loop will run (x-times)
   - while ...for more complex break-conditions (loop can run 1 or 9999 times)
 
 ## Stack vs Heap
 
-- Section 8 - Video 64
-- Stack
+- [Section 8 - Video 64]()
+- **Stack**
   - small (8MB default)
   - fast
   - automatic allocation/deallocation
   - array size must be known to compile time (e.g. array)
-- Heap
+- **Heap**
   - big
   - manuall (de)allocation
 
