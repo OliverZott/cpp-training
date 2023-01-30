@@ -59,11 +59,22 @@ user scripts:
 - Include Guard ...to only include functions once
   - `#pragma once`
 
-## Basics
+## Chapter02
+
+### General
 
 - `#define` vs `const` [link](https://www.geeksforgeeks.org/diffference-define-const-c/)
+- `Uniform Initialization` e.g.: `auto var = int{2}` [link](https://ianyepan.github.io/posts/cpp-uniform-initialization/)
+- const, constexpr, static
+- type casting e.g. `static_cast<float>(var)`
 
-## Loops
+### Arrays
+
+- C-style arrays point to memory address (first byte) of array
+- C-style arrays have const length! (always provide array length to functions)
+- Better us C++ style! `std::array<type>`
+
+### Loops
 
 - `continue` vs `break`
   - continue ...starts next loop
@@ -72,7 +83,9 @@ user scripts:
   - for ...we "know" how often loop will run (x-times)
   - while ...for more complex break-conditions (loop can run 1 or 9999 times)
 
-## Stack vs Heap
+## Chapter03
+
+### Stack vs Heap
 
 - [Section 8 - Video 64]()
 - **Stack**

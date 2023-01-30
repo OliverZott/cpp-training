@@ -2,13 +2,6 @@
 
 #include "Game.hpp"
 
-constexpr unsigned int LEN_X = 10;
-constexpr unsigned int START = 0;
-constexpr unsigned int GOAL = LEN_X - 1;
-
-constexpr char LEFT = 'a';
-constexpr char RIGHT = 'd';
-
 void print_game_state(unsigned int player)
 {
     char game_state[LEN_X];
