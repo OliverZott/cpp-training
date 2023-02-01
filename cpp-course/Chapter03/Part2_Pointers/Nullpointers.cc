@@ -13,13 +13,18 @@ int main()
     // Heap de-allocation
     delete p_zahl;
 
+    std::cout << " ------- After 'delete p_zahl' -------" << std::endl;
     std::cout << "p_zahl: " << p_zahl << std::endl;
     std::cout << "*p_zahl: " << *p_zahl << std::endl;
     std::cout << "&p_zahl: " << &p_zahl << std::endl;
 
-
     // Release memory
     p_zahl = nullptr;
+
+    std::cout << " ------- After 'p_zahl = nullptr' -------" << std::endl;
+    std::cout << "p_zahl: " << p_zahl << std::endl;
+    std::cout << "*p_zahl: " << *p_zahl << std::endl;
+    std::cout << "&p_zahl: " << &p_zahl << std::endl;
 
     if (p_zahl != nullptr)
     {

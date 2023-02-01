@@ -1,17 +1,18 @@
 #include <iostream>
 
+// call-by-value
 void f(int *p_num)
 {
     std::cout << "F: p_number: " << p_num << std::endl;
     std::cout << "F: &p_number: " << &p_num << std::endl;
 }
 
+// call-by-reference
 void g(int *&p_num)
 {
     std::cout << "G: p_number: " << p_num << std::endl;
     std::cout << "G: &p_number: " << &p_num << std::endl;
 }
-
 
 int main()
 {

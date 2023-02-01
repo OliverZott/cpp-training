@@ -87,7 +87,9 @@ user scripts:
 
 ### Stack vs Heap
 
-- [Section 8 - Video 64]()
+Memory management important because no garbage collector in C++
+
+- [Section 8 - Video 64](https://www.udemy.com/course/der-komplettkurs-zur-modernen-c-programmierung/learn/lecture/9363462#announcements)
 - **Stack**
   - small (8MB default)
   - fast
@@ -95,7 +97,8 @@ user scripts:
   - array size must be known to compile time (e.g. array)
 - **Heap**
   - big
-  - manuall (de)allocation
+  - manuall (de)allocation (New and Delete)
+  - later: smart pointer
 
 ## Conventions
 
