@@ -1,12 +1,19 @@
 #include <iostream>
 #include <cstdint>
 
+// int array
 void print_array(const std::int32_t arr[], const std::size_t len)
 {
     for (std::size_t i = 0; i < len; i++)
     {
         std::cout << arr[i] << std::endl;
     }
+}
+
+// char array (with pointer instead of array-notation)
+void print_name(const char *name)
+{
+    std::cout << name << std::endl;
 }
 
 int main()
@@ -25,6 +32,9 @@ int main()
     }
 
     print_array(values, 3);
+
+    const auto name = "Olli";
+    print_name(name);
 
     return 0;
 }

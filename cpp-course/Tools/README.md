@@ -19,3 +19,17 @@ Compare files with both FLAGS.
 - `-g3` most verbose debug info
 - `-O0` no optimization
 - `-DNDEBUG`
+
+## analyzer
+
+- `ANALYSER_FLAGS = -fanalyzer`
+- does little more then just warnings
+- similar to clan-tide... addtition to compiler warnings
+- slow, not in porduction or during debugging?
+- available for gcc and clang
+
+## adress sanatizer
+
+- `SANITIZER_FLAGS = -fsanitize=address`
+- looking for address memory problems
+- linux only

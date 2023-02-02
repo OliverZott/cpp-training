@@ -49,6 +49,18 @@ user scripts:
 
 # Remarks
 
+## Content
+
+- Chapter1: Intro
+- Chapter2: Variables, Loops, Conditions, Functions, Tooling, Various
+- Chapter3:  
+  - Arrays (c-style)  -> c++-style: std::string, std::vector, std::array
+  - Pointers
+- Chapter4:
+  - Enum
+  - Struct
+  - namespaces
+
 ## Compiler / Assembler
 
 [Debug vs Release Mode](https://www.udemy.com/course/der-komplettkurs-zur-modernen-c-programmierung/learn/lecture/21945536#questions/18657802)  
