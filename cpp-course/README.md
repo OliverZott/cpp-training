@@ -97,7 +97,7 @@ user scripts:
 
 ## Chapter03
 
-### Stack vs Heap
+### Stack / Heap
 
 Memory management important because no garbage collector in C++
 
@@ -111,6 +111,20 @@ Memory management important because no garbage collector in C++
   - big
   - manuall (de)allocation (New and Delete)
   - later: smart pointer
+
+### Pointers and c-style Arrays
+
+- **Pointer**
+  - pointer are on the STACK
+  - pointer can point to any memory (HEAP, STACK,...)
+- **Pointer-Array**
+  - to allocate HEAP and have pointer to first addres
+  - int *a = new int[10]{1, 2, 3};
+- **Call-By-Reference** vs **Call-By-Value** with differenct cases:
+  - Input only (`const int v`)
+  - Input only with ref (`const int &v`)  // const, but i dont want to create a copy
+  - Output only (???)
+  - Input & Output (call-by-ref and NO const: `int &v`)
 
 ## Conventions
 

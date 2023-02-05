@@ -52,6 +52,7 @@ int main()
 
     // float *ptr; // pointer for array addresss
     // ptr = input_vector(len);
+    int *a = new int[10]{1, 2, 3};
 
     return 0;
 }
