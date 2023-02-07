@@ -39,23 +39,29 @@ int main()
     int_array[1] = 1;
     int_array[2] = 2;
 
-    std::cout << &int_array << std::endl;
-    std::cout << *int_array << std::endl;
-    std::cout << int_array << std::endl;
+    // std::cout << &int_array << std::endl;
+    // std::cout << *int_array << std::endl;
+    // std::cout << int_array << std::endl;
 
     push_back(int_array, size, 42);
     size++;
 
-    std::cout << &int_array << std::endl;
-    std::cout << *int_array << std::endl;
-    std::cout << int_array << std::endl;
+    // std::cout << &int_array << std::endl;
+    // std::cout << *int_array << std::endl;
+    // std::cout << int_array << std::endl;
 
-    for (size_t i = 0; i < size; i++)
+    for (size_t i = 0; i < size + 2; i++)
     {
         std::cout << int_array[i] << std::endl;
     }
 
-    // ========================= Exercise 4 =========================
+    pop_back(int_array, size);
+    size--;
+
+    for (size_t i = 0; i < size + 2; i++)
+    {
+        std::cout << int_array[i] << std::endl;
+    }
 
     return 0;
 }

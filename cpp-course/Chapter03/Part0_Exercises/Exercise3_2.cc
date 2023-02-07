@@ -30,3 +30,17 @@ void push_back(int *&input_array, const std::size_t &size, const int &value)
 
     std::cout << "----------- Inside function END -----------" << std::endl;
 }
+
+void pop_back(int *&input_array, const std::size_t &size)
+{
+    int *temp = new int[size + 1];
+
+    for (size_t i = 0; i < size - 1; i++)
+    {
+        temp[i] = i;
+    }
+
+    delete[] input_array;
+
+    input_array = temp;
+}
