@@ -22,7 +22,7 @@ int main()
     std::cout << "Address of number (&number): " << &number << std::endl;
     std::cout << "Value of p (p): " << p << std::endl;
     std::cout << "Address of p (&p): " << &p << std::endl;
-    std::cout << "Value of memory address that p points to (*p): " << *p << std::endl;
+    std::cout << "Address that p points to (*p): " << *p << std::endl;
 
     return 0;
 }
