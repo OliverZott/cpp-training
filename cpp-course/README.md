@@ -29,6 +29,8 @@
 - For debugging
   - make sure `-g` **flag** is set in makefile!
   - Select file and click **(gdb) Launch** in the Debug Window
+- Debugging ARGV:
+  - <https://www.udemy.com/course/der-komplettkurs-zur-modernen-c-programmierung/learn/lecture/29370936#announcements>
 
 ----
 

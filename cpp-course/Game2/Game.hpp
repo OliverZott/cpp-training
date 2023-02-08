@@ -11,7 +11,7 @@ constexpr static char RIGHT = 'd';
 
 void print_game_state(unsigned int player);
 
-unsigned int execute_move(unsigned int player, char move);
+std::uint32_t execute_move(std::uint32_t &player, char move);
 
 bool is_finished(unsigned int player);
 

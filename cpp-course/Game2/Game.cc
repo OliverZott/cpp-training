@@ -1,8 +1,9 @@
 #include <iostream>
+#include <cstdint>
 
 #include "Game.hpp"
 
-void print_game_state(unsigned int player)
+void print_game_state(const std::uint32_t player)
 {
     char game_state[LEN_X];
 
@@ -20,7 +21,7 @@ void print_game_state(unsigned int player)
     }
 }
 
-unsigned int execute_move(unsigned int player, char move)
+std::uint32_t execute_move(std::uint32_t &player, const char move)
 {
     if (move == LEFT)
     {
@@ -55,7 +56,7 @@ bool is_finished(unsigned int player)
 
 void game()
 {
-    unsigned int player = 1;
+    std::uint32_t player = START + 1;
     char move;
     bool finished = false;
 
@@ -63,7 +64,7 @@ void game()
     {
         print_game_state(player);
         std::cin >> move;
-        // system("clear");
+        system("clear"); // each move new screen
         player = execute_move(player, move);
         finished = is_finished(player);
     }
