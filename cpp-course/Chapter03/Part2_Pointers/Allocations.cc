@@ -21,7 +21,7 @@ int main()
     std::cout << "Memory address of p (&p): " << &p << std::endl;
 
     // address we are pointing to
-    std::cout << "Memory address of pointed value by 'p': " << p << std::endl;
+    std::cout << "Memory address pointer 'p' points to : " << p << std::endl;
     std::cout << "Value  of memory-addres pointer 'p' points to : " << *p << std::endl;
 
     *p = 123;

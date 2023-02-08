@@ -18,8 +18,8 @@ void f1(int v)
 //   - pointer TO the given variable
 void f2(int *v)
 {
-    std::cout << "f2: " << *v << std::endl; // for value of pointer de-reference
-    std::cout << "f2: " << v << std::endl;  // pointer itlsef contains only its memory address
+    std::cout << "f2: " << *v << std::endl; // de-reference for value of pointer
+    std::cout << "f2: " << v << std::endl;  // pointer itlsef (memory address)
 }
 
 // c++ -style, using reference (always use for call-by-ref)
