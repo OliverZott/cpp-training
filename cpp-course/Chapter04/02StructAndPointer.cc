@@ -1,14 +1,12 @@
 #include <iostream>
 #include <string>
 
-
 enum class Lane
 {
     RIGHT_LANE,
     LEFT_LANE,
     MIDDLE_LANE,
 };
-
 
 struct Vehicle
 {
@@ -38,7 +36,6 @@ void print_vehicle(Vehicle &vehicle)
     }
 }
 
-
 // Using '->' instead '.' operator to call members when adress is given!
 void print_vehicle_by_pointer(Vehicle *vehicle)
 {
@@ -63,9 +60,9 @@ void print_vehicle_by_pointer(Vehicle *vehicle)
 
 int main()
 {
-    Vehicle vehicle1 = {1, 50, Lane::MIDDLE_LANE};
+    Vehicle vehicle1 = {1, 100.0f, Lane::MIDDLE_LANE};
 
-    // C++2ß - designated struct initializer
+    // C++20 - designated struct initializer
     Vehicle vehicle2 = {.id = 2, .velocity = 140, .lane = Lane::RIGHT_LANE};
 
     print_vehicle(vehicle1);
