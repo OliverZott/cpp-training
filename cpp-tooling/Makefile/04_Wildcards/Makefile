@@ -18,6 +18,8 @@ CPP_COMPILER_CALL = $(CPP_COMPILER) $(CPP_COMPILER_FLAGS)
 CPP_SRCS = $(wildcard *.cpp)
 CPP_OBJECTS = $(patsubst %.cpp, %.o, $(CPP_SRCS)) # creates lists with .o endings for all cpp files
 
+CPP_OBJECTS2 = my_lib.o main.o  # alternative version with explicit 
+ 
 
 # ============================= Pseudo Targest =============================
 build: $(EXECUTABLE_NAME)
@@ -25,13 +27,14 @@ build: $(EXECUTABLE_NAME)
 
 # ============================= TARGETS =============================
 $(EXECUTABLE_NAME): $(CPP_OBJECTS)
+	echo $(CPP_OBJECTS)
 	$(CPP_COMPILER_CALL) $^ -o $@
 
 
 # ============================= Patterns =============================
 
-# $< ...first dependency  (%.cpp)
-# $@ ...target			(%.o)
+# $< ...the name of the first dependency  	(%.cpp)
+# $@ ...the file name of the target			(%.o)
 
 # Target: Dependency
 %.o: %.cpp
