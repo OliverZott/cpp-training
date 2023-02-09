@@ -4,13 +4,7 @@
 
 #include "DynArray.h"
 
-struct DynamicArray
-{
-    double *m_data;
-    std::size_t m_length;
-};
-
-DynamicArray create_dynamic_array(const double &value, const std::size_t length)
+DynamicArray create_dynamic_array(const double &value, const std::size_t &length)
 {
     DynamicArray dynamicArray = {.m_data = nullptr, .m_length = 0};
     dynamicArray.m_length = length;
