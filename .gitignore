@@ -1,6 +1,13 @@
 # Custom (OZ)
 main
 
+# CMake stuff (OZ)
+**/CMakeFiles
+Makefile
+CMakeCache.txt
+main
+cmake_install.cmake
+
 ### VisualStudioCode ###
 .vscode/*
 # !.vscode/settings.json
