@@ -6,7 +6,7 @@
 1. `cmake ..`
 1. `cmake .` to update after changes
 1. `cmake --build .` or `make`
-1. `./main`
+1. `./main` or cd app and `./Executable`
 
 # CMake Tutorial
 
