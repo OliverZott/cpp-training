@@ -14,8 +14,8 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF) # gcc compiler extensions
 
-set(EXE_NAME Executable)
-set(LIB_NAME Library)
+set(EXECUTABLE_NAME Executable)
+set(LIBRARY_NAME Library)
 
 add_subdirectory(configured)
 add_subdirectory(src)
