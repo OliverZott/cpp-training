@@ -5,6 +5,12 @@
 # Fetch Contentn
 
 - better if lib HAS Cmake
+- change:
+  - CMakeLists in project
+  - CMakeLists in src/my_lib
+  - CMakeLists in app
+- `strg + shift + p` -> `Cmake: Delete Cache And Reconfigure`
+- compile all (build button or `cmake --build .` with `cmake ..` before if necessary)
 
 # Specify build target
 
