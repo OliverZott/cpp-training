@@ -8,6 +8,14 @@ In Projecet path:
 
 - `git submodule add https://github.com/nlohmann/json external/json`
 
+# Graphviz library
+
+- `sudo apt install graphviz`
+- `mkdir build`
+- `cd build`
+- `cmake .. --graphviz=test.dot`
+- `dot -Tpng test.dot -o test.png`
+
 # Specify build target
 
 - mkdir build

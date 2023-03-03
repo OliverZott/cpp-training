@@ -1,0 +1,8 @@
+# Makefile template for general usage
+
+dependencies:
+	cd build && cmake .. --graphviz=dependencies.dot && dot -Tpng dependencies.dot -o dependencies.png
+
+prepare:
+	rm -rf build
+	mkdir build 

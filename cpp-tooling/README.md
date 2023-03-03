@@ -42,3 +42,16 @@ Learn basic Cpp Tooling with **Make** and **CMake**.
 - sudo apt-get install cppcheck
 - sudo apt-get install clang-format
 - sudo apt-get install clang-tidy
+
+# Remarks
+
+## Useful tools
+
+- Graphivz `sudo apt install graphviz`
+- Doxygen `sudo apt install doxygen`
+
+## Templates from course
+
+- general folder structure
+- **Makefile**
+- **CMakeLists.txt**
