@@ -22,6 +22,7 @@
 
 - use CLI
   - `g++ TernaryOperator.cc -g -o main` ... -g for debugging
+  - `g++ filecc -g -std=c++20 -o main`
   - `./main`
   - `g++ Game.cc  Main.cc -g -o main` ...if various cpp files (ignore headers)
 - Use makefile:
