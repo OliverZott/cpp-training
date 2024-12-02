@@ -26,6 +26,8 @@ build
 *.lo
 *.o
 *.obj
+*.s 
+*.i
 
 # Precompiled Headers
 *.gch
