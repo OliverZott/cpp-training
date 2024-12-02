@@ -21,7 +21,7 @@ link:
 
 # Compile and link HelloWorld.cc in a single step to create executable
 build:
-	g++  $(FLAGS) HelloWorld.cc -o main
+	g++ $(FLAGS) HelloWorld.cc -o main
 
 # Disassemble the executable and print the assembly code and source code
 print_exe:

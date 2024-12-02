@@ -8,6 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
+            "preLaunchTask": "build-cpp",
             "program": "${fileDirname}/main",
             "args": [],
             "stopAtEntry": false,

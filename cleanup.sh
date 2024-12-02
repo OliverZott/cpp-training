@@ -1,5 +1,6 @@
 #!/bin/sh
-# executable permission: chmod +x cleanup.sh
+# Todo: executable permission: chmod +x cleanup.sh
+# Run: ./cleanup.sh or sh cleanup.sh
 
 # Find (pre-) compiled files and delete
 result=$(find . -type f \( -name "*.o" -o -name "main" \))      # process substitution
