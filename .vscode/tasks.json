@@ -2,13 +2,31 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build-cpp",
+            "label": "build-cpp-project",
             "type": "shell",
             "command": "g++",
             "args": [
                 "-g",
                 // "${fileDirname}/*.cpp",
                 "${fileDirname}/*.cc",
+                "-o",
+                "${fileDirname}/main"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "build-cpp-file",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${file}",
                 "-o",
                 "${fileDirname}/main"
             ],
