@@ -7,6 +7,9 @@ Lot of security issues derive from this old C-style behavior
 Hence, one would use:
     - void print_array(const std::int32_t *arr, const std::size_t len)      instead of
     - void print_array(const std::int32_t arr[], const std::size_t len)
+
+const std::int32_t arr[] is interpreted as const std::int32_t *arr by compiler?!
+
 */
 
 #include <iostream>
@@ -23,6 +26,7 @@ void print_array2(const std::int32_t arr[], const std::size_t len)
 {
     for (std::size_t i = 0; i < len; i++)
     {
+        std::cout << arr[i] << std::endl;
         std::cout << *(arr + i) << std::endl; // pointer arithemtic
     }
 }

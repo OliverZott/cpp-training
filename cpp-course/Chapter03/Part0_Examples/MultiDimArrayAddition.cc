@@ -1,3 +1,18 @@
+/*
+
+For statically sized arrays with known dimensions, you can initialize them at the time of declaration (as shown below)
+For dynamic arrays, using std::vector is often preferred due to its automatic memory management and ease of use.
+
+Array Initialization:
+std::uint32_t result_array[len];  ...might contain arbitrary values (left-over in memory)
+std::uint32_t result_array[len] = {0};
+
+
+Memory Allocation: Memory for the array is allocated, but it is not cleared or set to any specific value.
+Garbage Values: The memory locations may contain leftover data (garbage values) from previous usage, leading to strange or unexpected values when you access the elements.
+
+*/
+
 #include <iostream>
 #include <cstdint>
 
@@ -34,7 +49,7 @@ int main()
 
     // ----------------------------- Shorter -----------------------------
 
-    std::int32_t col_sums[num_cols]{};
+    std::int32_t col_sums[num_cols]{}; // array of 2 elements intialized to 0
 
     for (std::int32_t i = 0; i < 3; i++)
     {

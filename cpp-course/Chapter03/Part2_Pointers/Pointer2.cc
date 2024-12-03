@@ -5,6 +5,7 @@ void print_int_pointer(int *p)
     std::cout << "Deref (*p): " << *p << std::endl;
     std::cout << "Ref (p): " << p << std::endl;
     std::cout << "Pointer address (&p): " << &p << std::endl;
+    std::cout << "" << std::endl;
 }
 
 int main()
@@ -15,7 +16,7 @@ int main()
     int *c = &a;
     print_int_pointer(c);
 
-    --*c;
+    --*c; // decrement value of a
     print_int_pointer(c);
 
     int *d = &a;

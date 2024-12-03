@@ -5,6 +5,19 @@ Pointer is on STACK and points to memory adrres on the HEAP
     - new-keyword reserves memory on HEAP
     - pointer is living on the STACK
 
+    Stack                   Heap
+    ------------------------------------
+    | int *p | ----> | [int value: 10] |
+    ------------------------------------
+
+
+- int *p ...This declares a pointer p that lives on the stack.
+- p = new int ...This allocates memory for an int on the heap, and p now holds the address of this memory.
+- *p ...This dereferences the pointer p, meaning it accesses the value stored at the memory address that p points to, which is the memory allocated on the heap.
+
+above is the same as:
+- int *p = new int; ... declares a pointer p and allocates memory for an int on the heap, assigning the address to p.
+
 */
 
 #include <iostream>
@@ -14,10 +27,9 @@ int main()
 
     // Heap allocation
 
-    int *p = new int; // lives on heap because of new-keyword
+    int *p = new int; // pointer live on stack but dynamically allocates memory for an integer on the heap. The pointer p now holds the address of this newly allocated memory.
     *p = 4;
 
-    // memory address of p on the STACK
     std::cout << "Memory address of p (&p): " << &p << std::endl;
 
     // address we are pointing to

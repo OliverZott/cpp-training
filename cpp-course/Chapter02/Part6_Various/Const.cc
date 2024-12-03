@@ -7,7 +7,7 @@ const keyword:
 
 Advantages of const keyword
 - clearer to reader/programmer that value wont change
-- compiler my optimize code better
+- compiler optimizes code better
 
 Compiletime vs Runtime
 - Compiletime ...informations when building/compiling

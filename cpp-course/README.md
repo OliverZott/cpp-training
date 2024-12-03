@@ -56,12 +56,13 @@ user scripts:
 
 - Edit Make file for single output folder and clean-up before each build (auto delete executables)!
 
-# Remarks
-
-## Content
+# Content
 
 - Chapter1: Intro
-- Chapter2: Variables, Loops, Conditions, Functions, Tooling, Various
+- Chapter2:
+  - Variables / const, static
+  - Loops & Conditions
+  - Tooling
 - Chapter3:  
   - Arrays (c-style)  -> c++-style: std::string, std::vector, std::array
   - Pointers
@@ -84,16 +85,21 @@ user scripts:
 
 ### General
 
-- `#define` vs `const` [link](https://www.geeksforgeeks.org/diffference-define-const-c/)
+- variable initialization .e.g. `constexpr static auto num_rows = std::uint32_t{3};`
+  - char a = '\0'; ...Assignment initialization
+  - char b('\0'); ...Parentheses initialization
+  - char c{'\0'}; ...Brace initialization (uniform, consistent, and safer initialization that prevents narrowing conversions)
+  - short c{1.5}; ...Error: narrowing conversion detected
+- data types
+  - int
+  - std::int32_t ...When you need a precise and guaranteed integer size. For cross-platform consistency in data structures, file formats, or network protocols
 - `Uniform Initialization` e.g.: `auto var = int{2}` [link](https://ianyepan.github.io/posts/cpp-uniform-initialization/)
-- const, constexpr, static
-- type casting e.g. `static_cast<float>(var)`
-
-### Arrays
-
-- C-style arrays point to memory address (first byte) of array
-- C-style arrays have const length! (always provide array length to functions)
-- Better us C++ style! `std::array<type>`
+- **const** (run-time), **constexpr** (compile-time), **#define** (preprocessor-command), **static** ()
+  - const ...Ensures immutability of a variable after initialization
+  - static ...Varies by context: retains value in functions, shares across class instances, restricts scope to the file.
+  - `#define` vs `const` [link](https://www.geeksforgeeks.org/diffference-define-const-c/)
+- type casting e.g. `static_cast<float>(var)` vs `int(a)` vs `float{var}`
+- `template <typename T>` ...generics like c# or java
 
 ### Loops
 
@@ -105,6 +111,12 @@ user scripts:
   - while ...for more complex break-conditions (loop can run 1 or 9999 times)
 
 ## Chapter03
+
+### Arrays
+
+- C-style arrays point to memory address (first byte) of array
+- C-style arrays have const length! (always provide array length to functions)
+- Better us C++ style! `std::array<type>`
 
 ### Stack / Heap
 

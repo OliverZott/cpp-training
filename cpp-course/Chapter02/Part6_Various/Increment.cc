@@ -20,4 +20,6 @@ int main()
     std::cout << "Value: " << val << std::endl;
     func(++val);
     std::cout << "Value: " << val << std::endl;
+    func(val++);
+    std::cout << "Value: " << val << std::endl;
 }
