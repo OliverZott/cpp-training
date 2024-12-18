@@ -40,6 +40,8 @@ int main()
     f1(a);
     f2(&a);
     f3(a);
+    f2(nullptr); // null-ptr problem
+    // f3(nullptr);        // no null-ptr problem
 
     return 0;
 }

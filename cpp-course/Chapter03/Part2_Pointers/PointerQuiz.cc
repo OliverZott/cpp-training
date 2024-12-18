@@ -24,4 +24,10 @@ int main()
     std::cout << *p_a << std::endl; // 15
     std::cout << *p_b << std::endl; // 15 (=b)
     std::cout << *p_c << std::endl; // 13
+
+    int *num;
+    num = new int{3};
+    std::cout << "*num: " << *num << std::endl; // value stored in heap: 3
+    std::cout << "num: " << num << std::endl;   // memory address on heap: 0x7f8f1b402010
+    std::cout << "&num: " << &num << std::endl; // memory address on stack: 0x7fffbf7b3c08
 }
