@@ -7,6 +7,7 @@ Const parameters are INPUT ONLY
 #include <cstdint>
 
 // Copy - Input only but modifiable
+// local variables inside a function are stored on the stack
 void copy(int v)
 {
     v *= 2;
@@ -40,7 +41,7 @@ void reference_in_output(int &v)
 
 int main()
 {
-    auto a = 2;
+    auto a = 2; // local variable and no dynamic memory allocated (new/malloc) -> a is on stack
     std::cout << "a: " << a << std::endl;
     std::cout << "&a: " << &a << std::endl;
 
